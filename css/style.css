@@ -1577,7 +1577,10 @@ a
   }
 }
 
-@media (max-height: 600px)
+@media only screen
+and (min-device-height: 370px)
+and (max-device-height: 420px)
+and (orientation: landscape)
 {
   .nav__list
   {
@@ -1601,7 +1604,8 @@ a
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
-and (orientation: landscape) {
+and (orientation: landscape)
+{
   .up-button
   {
     display: none;
