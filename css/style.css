@@ -240,28 +240,46 @@ a
 }
 
 .header__title::before,
-.header__title::after
+.contacts__text::before
 {
   content: "";
   position: absolute;
   bottom: 0;
 
-  width: 80px;
+  width: 196px;
   height: 1px;
-
-  background-color: #f1ebe7;
 }
 
-.header__title::before,
-.contacts__container::before
+.header__title::before
 {
-  left: calc(50% - 99px)
+  background: linear-gradient(to right, #f1ebe7 80px, transparent 80px, transparent 116px, #f1ebe7 116px);
 }
 
 .header__title::after,
-.contacts__container::after
+.contacts__text::after
 {
-  right: calc(50% - 97px)
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: calc(50% - 4px);
+
+  width: 7px;
+  height: 7px;
+
+  background-color: #e74c3c;
+  border-radius: 50%;
+}
+
+.header__title::before,
+.contacts__text::before
+{
+  left: calc(50% - 98px)
+}
+
+.header__title::after,
+.contacts__text::after
+{
+  left: calc(50% - 3px)
 }
 
 .header__slogan
@@ -290,20 +308,6 @@ a
   line-height: 24px;
   text-align: center;
   color: #cbc6c0;
-}
-
-.header__text::before
-{
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: calc(50% - 4px);
-
-  width: 7px;
-  height: 7px;
-
-  background-color: #e74c3c;
-  border-radius: 50%;
 }
 
 .header__buttons
@@ -693,32 +697,11 @@ a
   color: #999999;
 }
 
-.contacts__container::before,
-.contacts__container::after
-{
-  content: "";
-  position: absolute;
-  top: -70px;
-
-  width: 80px;
-  height: 1px;
-
-  background-color: #999999;
-}
-
 .contacts__text::before
 {
-  content: "";
-  position: absolute;
-  bottom: 3px;
-  left: calc(50% - 4px);
-
-  width: 7px;
-  height: 7px;
-
-  background-color: #e74c3c;
-  border-radius: 50%;
+  background: linear-gradient(to right, #999999 80px, transparent 80px, transparent 116px, #999999 116px);
 }
+
 
 .contacts__container
 {
@@ -763,7 +746,7 @@ a
 .contacts__address,
 .contacts__link
 {
-  width: 280px;
+  max-width: 280px;
   margin: 0;
   padding: 0;
 

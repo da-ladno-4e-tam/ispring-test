@@ -3,11 +3,6 @@ var upButton = document.querySelector('.up-button');
 window.addEventListener('scroll', trackScroll);
 upButton.addEventListener('click', backToTop);
 
-// upButton.onclick = function (evt) {
-//   evt.preventDefault();
-
-// }
-
 window.onload = function () {
   upButton.classList.add('hidden');
 }
